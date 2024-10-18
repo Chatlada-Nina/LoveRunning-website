@@ -20,7 +20,7 @@
 <body>
     <!--Header-->
     <header>
-        <a href="signup.html">
+        <a href="index.html">
             <h1 id="logo">Love Running</h1>
         </a>
         <input type="checkbox" id="nav-toggle" name="nav-toggle">
@@ -42,7 +42,35 @@
     </header>
 
     <!--Main Content-->
-    <main>Main Content</main>
+    <main>
+        <section id="signup">
+            <form action="https://formdump.codeinstitute.net" method="POST" id="signup-form">
+                <h2><i class="fa-solid fa-heart-pulse"> </i>Let's get you signed up!</h2>
+                <label for="first-name">First Name</label>
+                <input type="text" name="first_name" id="first-name" class="text-input" required>
+                 <br>
+                <label for="last-name">Last Name</label>
+                <input type="text" name="last_name" id="last-name" class="text-input" required>
+                 <br>
+                <label for="email-address">Email Address</label>
+                <input type="email" name="email_address" id="email-address" class="text-input" required>
+                <br>
+                <div class="radio-buttons">
+                    <div>Road
+                        <input type="radio" value="road" name="running_preference" id="road" required>
+                    </div>
+                    <div>Trail
+                        <input type="radio" value="trail" name="running-preference" id="trail" required>
+                    </div>
+                    <div>Both
+                        <input type="radio" value="both" name="running-preference" id="both" required>
+                    </div>
+                    <input type="submit" class="join-button" value="Let's Run!">
+
+                </div>
+            </form>
+        </section>
+    </main>
 
     <!--Footer-->
     <footer>
